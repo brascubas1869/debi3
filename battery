@@ -1,0 +1,21 @@
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <label-charging>
+format-charging-prefix = " "
+label-charging = ${self.label-discharging}
+
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage%
+
+format-full = " 99"
+;     
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-0-foreground = #FF0000
